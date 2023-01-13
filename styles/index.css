@@ -8,8 +8,9 @@
 /* Custom properties */
 :root {
     --background-color-white: #FFFF;
-    --text-color-white: #FFFF;
     --backgroun-color-pink: #FF6B6B;
+    --background-color-grey-99: #3C3B34;
+    --text-color-white: #FFFF;
     --text-color-pink: #FF6B6B;
     --text-color-grey-99: #3C3B34;
     --text-color-grey-50: #C6C5BD;
@@ -27,29 +28,40 @@
 }
 
 @font-face {
+    font-family: "aktivGrotest-lt";
+    src: url('../assets/fonts/AktivGrotesk_Lt.ttf');
+}
+
+@font-face {
     font-family: "playfair-regular";
     src: url('../assets/fonts/PlayfairDisplay-Regular.ttf');
 }
 
 /* UTILITY CLASSES */
-button{
-    border: none;
-    font-family: aktivGrotest-bd, sans-serif;
-    font-size: 14px;
-}
-/* UTILITY CLASSES END */
-
 body {
     background-color: var(--background-color);
 }
 
 header {
     display: flex;
+    position: sticky;
     align-items: center;
     justify-content: space-between;
     padding: 1.5rem;
     background-color: var(--background-color);
 }
+
+main {
+    padding: 1rem;
+    padding-left: 18px;
+}
+
+button{
+    border: none;
+    font-family: aktivGrotest-bd, sans-serif;
+    font-size: 14px;
+}
+/* UTILITY CLASSES END */
 
 .logo-img {
     width: 3rem;
@@ -75,10 +87,6 @@ svg {
 }
 
 /* MAIN */
-main {
-    padding: 1rem;
-    padding-left: 18px;
-}
 
 /* section title */
 .section-title {
@@ -127,7 +135,62 @@ main {
     color: var(--text-color-pink);
     margin-top: 1.5rem;
 }
-
 /* section introduction END */
 
+.desk-image{
+    margin-top: 4rem;
+    object-fit: cover;
+    max-width: 100%;
+}
+
+/* section AI design sprint */
+.section-ai-design-sprint{
+    margin-top: 4rem;
+    color: var(--text-color-grey-99);
+}
+
+.section-ai-design-sprint h2{
+    font-family: aktivGrotest-bd, sans-serif;
+    font-size: 35px;
+}
+
+.section-ai-design-sprint p{
+    font-family: aktivGrotest-lt, sans-serif;
+    font-size: 1rem;
+    line-height: 2rem;
+    margin-top: 1.5rem;
+}
+/* section AI design sprint END*/
+
 /* MAIN END */
+
+/* FOOTER */
+footer{
+    font-family: aktivGrotest-rg, sans-serif;
+    background-color: var(--background-color-grey-99);
+    color: var(--text-color-grey-50);
+    padding: 72px 0;
+}
+
+.section-footer{
+    padding-left: 18px;
+}
+
+.footer-logo{
+    width: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+footer section ul{
+    line-height: 2.5rem;
+    list-style: none;
+}
+
+.footer-text-services{
+    font-family: aktivGrotest-bd, sans-serif;
+    color: var(--text-color-white);
+    font-size: 18px;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+}
+/* FOOTER END */

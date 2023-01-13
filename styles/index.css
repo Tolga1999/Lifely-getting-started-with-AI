@@ -1,3 +1,133 @@
-body{
-    background-color: blue;
+/* CSS RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
 }
+
+/* Custom properties */
+:root {
+    --background-color-white: #FFFF;
+    --text-color-white: #FFFF;
+    --backgroun-color-pink: #FF6B6B;
+    --text-color-pink: #FF6B6B;
+    --text-color-grey-99: #3C3B34;
+    --text-color-grey-50: #C6C5BD;
+}
+
+/* fonts */
+@font-face {
+    font-family: "aktivGrotest-bd";
+    src: url('../assets/fonts/AktivGrotesk_Bd.ttf');
+}
+
+@font-face {
+    font-family: "aktivGrotest-rg";
+    src: url('../assets/fonts/AktivGrotesk_Rg.ttf');
+}
+
+@font-face {
+    font-family: "playfair-regular";
+    src: url('../assets/fonts/PlayfairDisplay-Regular.ttf');
+}
+
+/* UTILITY CLASSES */
+button{
+    border: none;
+    font-family: aktivGrotest-bd, sans-serif;
+    font-size: 14px;
+}
+/* UTILITY CLASSES END */
+
+body {
+    background-color: var(--background-color);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem;
+    background-color: var(--background-color);
+}
+
+.logo-img {
+    width: 3rem;
+}
+
+.menu-button {
+    display: flex;
+    align-items: center;
+    border: none;
+    background: none;
+    height: 2rem;
+    font-family: "aktivGrotest-rg";
+    font-size: 1rem;
+}
+
+.span-text {
+    margin-right: 0.5rem;
+}
+
+svg {
+    width: 1rem;
+    align-items: center;
+}
+
+/* MAIN */
+main {
+    padding: 1rem;
+    padding-left: 18px;
+}
+
+/* section title */
+.section-title {
+    margin-top: 1rem;
+}
+
+.section-title p {
+    font-size: 18px;
+    color: var(--text-color-grey-50);
+    font-family: playfair-regular;
+}
+
+.section-title h1 {
+    font-family: aktivGrotest-bd, sans-serif;
+    color: var(--text-color-grey-99);
+    font-size: 35px;
+    margin-top: 1.5rem;
+}
+
+/* section title END */
+
+/* section introduction */
+.section-introduction {
+    font-family: aktivGrotest-rg, sans-serif;
+    color: var(--text-color-grey-99);
+    font-size: 20px;
+    margin-top: 1.5rem;
+    line-height: 2rem;
+}
+
+.ai-design-sprint-text{
+    color: var(--text-color-pink);
+    text-decoration: none;
+}
+
+.schedule-button{
+    background-color: var(--backgroun-color-pink);
+    color: var(--text-color-white);
+    padding: 0.75rem 2rem;
+    margin-top: 1.5rem;
+}
+
+.discover-more-button{
+    font-family: aktivGrotest-rg, sans-serif;
+    background-color: var(--background-color-white);
+    color: var(--text-color-pink);
+    margin-top: 1.5rem;
+}
+
+/* section introduction END */
+
+/* MAIN END */

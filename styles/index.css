@@ -45,10 +45,11 @@ body {
 header {
     display: flex;
     position: sticky;
+    top: 0;
     align-items: center;
     justify-content: space-between;
-    padding: 1.5rem;
-    background-color: var(--background-color);
+    padding: 0.75rem 1.5rem;
+    background-color: var(--background-color-white)
 }
 
 main {
@@ -77,7 +78,9 @@ button{
     font-size: 1rem;
 }
 
-.span-text {
+.span-text-menu {
+    display: flex;
+    align-items: flex-end;
     margin-right: 0.5rem;
 }
 
@@ -186,7 +189,7 @@ footer section ul{
     list-style: none;
 }
 
-.footer-text-services{
+.footer-text-title{
     font-family: aktivGrotest-bd, sans-serif;
     color: var(--text-color-white);
     font-size: 18px;

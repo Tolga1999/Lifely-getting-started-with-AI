@@ -14,6 +14,7 @@
     --text-color-pink: #FF6B6B;
     --text-color-grey-99: #3C3B34;
     --text-color-grey-50: #C6C5BD;
+    --background-color-dark-grey-footer: #33322C;
 }
 
 /* fonts */
@@ -99,7 +100,7 @@ svg {
 .section-title p {
     font-size: 18px;
     color: var(--text-color-grey-50);
-    font-family: playfair-regular;
+    font-family: playfair-regular, sans-serif;
 }
 
 .section-title h1 {
@@ -170,9 +171,13 @@ svg {
 /* FOOTER */
 footer{
     font-family: aktivGrotest-rg, sans-serif;
-    background-color: var(--background-color-grey-99);
+    background-color: var(--background-color-dark-grey-footer);
     color: var(--text-color-grey-50);
-    padding: 72px 0;
+    padding: 0;
+}
+
+.first-footer-links{
+    padding-top: 72px;
 }
 
 .section-footer{
@@ -195,5 +200,60 @@ footer section ul{
     font-size: 18px;
     margin-top: 2.5rem;
     margin-bottom: 1rem;
+}
+
+.third-footer-links-solutions{
+    padding-bottom: 72px;
+}
+
+.tagline-footer{
+    padding: 64px 16px;
+    background-color: var(--background-color-grey-99);
+    color: var(--background-color-white);
+    font-family: aktivGrotest-bd, sans-serif;
+}
+
+.tagline-footer-title{
+    margin-bottom: 1.5rem;
+    font-size: 40px;
+}
+
+.tagline-subtitle{
+    display: inline-block;
+    font-family: playfair-regular, sans-serif;
+    color: var(--text-color-grey-50);
+    font-size: 1.125rem;
+    margin-bottom: 1.5rem;
+}
+
+.tagline-footer > p{
+    font-family: aktivGrotest-rg, sans-serif;
+    font-size: 0.875rem;
+    line-height: 34px;
+}
+
+.tagline-paragraph-text{
+    font-family: aktivGrotest-bd, sans-serif;
+}
+
+.credentials-footer{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background-color-dark-grey-footer);
+    font-size: 0.875rem;
+    padding: 1rem;
+    line-height: 2.125rem;
+}
+
+.credentials-footer-adres{
+    color: var(--text-color-white);
+}
+
+.credentials-footer-bold{
+    font-family: aktivGrotest-bd, sans-serif;
+}
+
+.section-footer a{
+    margin-top: 1.5rem;
 }
 /* FOOTER END */

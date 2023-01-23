@@ -50,7 +50,8 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 0.75rem 1.5rem;
-    background-color: var(--background-color-white)
+    background-color: var(--background-color-white);
+    z-index: 2;
 }
 
 main {
@@ -162,9 +163,65 @@ svg {
     font-family: aktivGrotest-lt, sans-serif;
     font-size: 1rem;
     line-height: 2rem;
+    margin: 1.5rem 0;
+}
+
+/* STEPS */
+.steps-h3{
+    font-size: 1.5rem;
+    font-family: aktivGrotest-bd, sans-serif;
+}
+/* STEPS END */
+/* section AI design sprint END*/
+
+/* section cases */
+.section-cases{
+    margin-top: 4rem;
+}
+
+.cases-h2{
+    color: var(--text-color-grey-99);
+    font-family: aktivGrotest-bd, sans-serif;
+    font-size: 35px;
+}
+
+.case-item{
+    position: relative;
     margin-top: 1.5rem;
 }
-/* section AI design sprint END*/
+
+.case-text-container{
+    font-family: aktivGrotest-bd, sans-serif;
+    position: absolute;
+    bottom: 0;
+    padding: 1rem;
+    line-height: 2rem;
+    background-color: rgba(60, 59, 52, 0.3);
+    width: 100%;
+}
+
+.case-text-container h3{
+    color: var(--text-color-white);
+    font-size: 0.9rem;
+}
+
+.case-text-container p{
+    font-size: 1rem;
+    color: var(--text-color-white);
+}
+
+.case-text-container button{
+    background-color: var(--backgroun-color-pink);
+    color: var(--text-color-white);
+    padding: 0.75rem 2rem;
+    font-size: 0.75rem;
+}
+
+.case-item img{
+    width: 100%;
+    object-fit: cover;
+}
+/* section cases END */
 
 /* MAIN END */
 

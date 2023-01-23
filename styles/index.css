@@ -253,9 +253,32 @@ svg {
     font-family: aktivGrotest-bd, sans-serif;
     color: var(--text-color-grey-99);
 }
-
-
 /* section contact END */
+
+/* section relatable links */
+.section-related-articles{
+    font-family: aktivGrotest-bd, sans-serif;
+    background-color: var(--background-color-white);
+    padding: 4rem 0;
+    padding-left: 18px;
+    line-height: 2rem;
+}
+.section-related-articles h2{
+    color: var(--text-color-grey-99);
+    font-family: aktivGrotest-bd, sans-serif;
+    font-size: 35px;
+}
+
+.section-related-article{
+    margin-top: 1.5rem;
+    color: var(--text-color-grey-99)
+}
+
+.section-related-article > a{
+    font-family: aktivGrotest-rg, sans-serif;
+    color: var(--text-color-pink);
+}
+/* section relatable links END*/
 
 /* MAIN END */
 

@@ -14,6 +14,7 @@
     --text-color-pink: #FF6B6B;
     --text-color-grey-99: #3C3B34;
     --text-color-grey-50: #C6C5BD;
+    --background-color-grey: #F6F6F4;
     --background-color-dark-grey-footer: #33322C;
 }
 
@@ -54,7 +55,7 @@ header {
     z-index: 2;
 }
 
-main {
+main{
     padding: 1rem;
     padding-left: 18px;
 }
@@ -222,6 +223,37 @@ svg {
     object-fit: cover;
 }
 /* section cases END */
+
+/* section contact */
+.section-contact{
+    margin-top: 4rem;
+    font-family: aktivGrotest-bd, sans-serif;
+    color: var(--text-color-grey-99);
+    background-color: var(--background-color-grey);
+    /* standaard padding left */
+    padding: 4rem 0;
+    padding-left: 18px;
+}
+
+.section-contact h2{
+    font-size: 1.25rem;
+}
+
+.contact-item{
+    display: flex;
+    flex-direction: column;
+    font-family: playfair-regular, sans-serif;
+    color: var(--text-color-grey-50);
+    line-height: 2rem;
+}
+
+.section-contact-number,.section-contact-mail{
+    font-family: aktivGrotest-bd, sans-serif;
+    color: var(--text-color-grey-99);
+}
+
+
+/* section contact END */
 
 /* MAIN END */
 

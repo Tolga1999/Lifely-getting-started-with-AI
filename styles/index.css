@@ -10,12 +10,13 @@
     --background-color-white: #FFFF;
     --backgroun-color-pink: #FF6B6B;
     --background-color-grey-99: #3C3B34;
+    --background-color-grey: #F6F6F4;
+    --background-color-dark-grey-footer: #33322C;
     --text-color-white: #FFFF;
     --text-color-pink: #FF6B6B;
     --text-color-grey-99: #3C3B34;
     --text-color-grey-50: #C6C5BD;
-    --background-color-grey: #F6F6F4;
-    --background-color-dark-grey-footer: #33322C;
+    --text-color-grey-70: #9B9A92;
 }
 
 /* fonts */
@@ -243,8 +244,9 @@ svg {
     display: flex;
     flex-direction: column;
     font-family: playfair-regular, sans-serif;
-    color: var(--text-color-grey-50);
+    color: var(--text-color-grey-70);
     line-height: 2rem;
+    margin-top: 1.5rem;
 }
 
 .section-contact-number,.section-contact-mail{

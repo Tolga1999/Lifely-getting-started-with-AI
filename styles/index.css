@@ -137,11 +137,19 @@ svg {
 }
 
 .discover-more-button{
+    display: flex;
+    align-items: center;
     font-family: aktivGrotest-rg, sans-serif;
     background-color: var(--background-color-white);
     color: var(--text-color-pink);
     margin-top: 1.5rem;
 }
+
+.discover-more-button > svg{
+    margin-left: 0.4em;
+}
+
+
 /* section introduction END */
 
 .desk-image{
@@ -275,8 +283,14 @@ svg {
 }
 
 .section-related-article > a{
+    display: flex;
+    align-items: center;
     font-family: aktivGrotest-rg, sans-serif;
     color: var(--text-color-pink);
+}
+
+.section-related-article > a > svg{
+    margin-left: 0.4em;
 }
 /* section relatable links END*/
 

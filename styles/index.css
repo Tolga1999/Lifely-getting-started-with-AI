@@ -47,6 +47,7 @@ html {
 
 body {
     background-color: var(--background-color);
+    overflow-x: hidden;
 }
 
 header {
@@ -170,6 +171,11 @@ svg {
     scroll-snap-type: x mandatory;
 }
 
+/* scrollbar verwijderen van carousel */
+.location-images::-webkit-scrollbar{
+    display: none;
+}
+
 .location-image {
     object-fit: cover;
     width: 100%;
@@ -219,7 +225,7 @@ svg {
 .step-1-container {
     position: relative;
     transition: ease 1s;
-    max-width: 37.5rem
+    max-width: 35rem
 }
 
 .step-2-container,
@@ -230,7 +236,7 @@ svg {
     transform: translate(30rem);
     transition: ease 1s;
     top: 0;
-    max-width: 37.5rem;
+    max-width: 35rem;
 }
 
 .step-title-h4 {
@@ -309,7 +315,7 @@ svg {
     line-height: 2rem;
     background-color: rgba(60, 59, 52, 0.3);
     width: 100%;
-    max-width: 40rem;
+    max-width: 30rem;
 }
 
 .case-text-container h3 {
@@ -331,7 +337,7 @@ svg {
 
 .case-item img {
     width: 100%;
-    max-width: 40rem;
+    max-width: 30rem;
     object-fit: cover;
 }
 
@@ -499,7 +505,7 @@ footer section ul {
 /* MEDIA QUERIES */
 
 /* tablet media query */
-@media screen and (min-width: 525px) {
+@media screen and (min-width: 530px) {
 
     /* MENU */
     .logo-img {
@@ -519,7 +525,7 @@ footer section ul {
 
     .section-introduction {
         font-size: 1.5rem;
-        width: 85%;
+        width: 80%;
         margin-left: 7.5rem;
     }
 
@@ -575,14 +581,26 @@ footer section ul {
     .step-3-container,
     .step-4-container,
     .step-5-container {
+        display: flex;
+        flex-direction: column;
         position: relative;
         transform: translate(0);
         margin-top: 1.5rem;
+        align-self: flex-start;
     }
 
     .step-1-container {
         margin-top: 0;
     }
+
+    .step-1-container, .step-3-container, .step-5-container{
+        margin-right: 10rem;
+    }
+
+    .step-2-container, .step-4-container{
+    margin-left: 10rem;
+    align-self: flex-end;
+}
 
     /* STEPS END */
 
@@ -591,6 +609,14 @@ footer section ul {
     }
 
     /* cases */
+    .cases-tablet{
+        display: flex;
+    }
+
+    .tablet-ruler-ai-case{
+        margin-right: 1.125rem;
+    }
+
     .case-text-container>h3 {
         font-size: 1rem;
     }

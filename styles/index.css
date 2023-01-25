@@ -56,16 +56,17 @@ header {
     z-index: 2;
 }
 
-main{
+main {
     padding: 1rem;
     padding-left: 18px;
 }
 
-button{
+button {
     border: none;
     font-family: aktivGrotest-bd, sans-serif;
     font-size: 14px;
 }
+
 /* UTILITY CLASSES END */
 
 .logo-img {
@@ -124,19 +125,19 @@ svg {
     line-height: 2rem;
 }
 
-.ai-design-sprint-text{
+.ai-design-sprint-text {
     color: var(--text-color-pink);
     text-decoration: none;
 }
 
-.schedule-button{
+.schedule-button {
     background-color: var(--backgroun-color-pink);
     color: var(--text-color-white);
     padding: 0.75rem 2rem;
     margin-top: 1.5rem;
 }
 
-.discover-more-button{
+.discover-more-button {
     display: flex;
     align-items: center;
     font-family: aktivGrotest-rg, sans-serif;
@@ -145,31 +146,31 @@ svg {
     margin-top: 1.5rem;
 }
 
-.discover-more-button > svg{
+.discover-more-button>svg {
     margin-left: 0.4em;
 }
 
 
 /* section introduction END */
 
-.desk-image{
+.desk-image {
     margin-top: 4rem;
     object-fit: cover;
     max-width: 100%;
 }
 
 /* section AI design sprint */
-.section-ai-design-sprint{
+.section-ai-design-sprint {
     margin-top: 4rem;
     color: var(--text-color-grey-99);
 }
 
-.section-ai-design-sprint h2{
+.section-ai-design-sprint h2 {
     font-family: aktivGrotest-bd, sans-serif;
     font-size: 35px;
 }
 
-.section-ai-design-sprint p{
+.section-ai-design-sprint>p {
     font-family: aktivGrotest-lt, sans-serif;
     font-size: 1rem;
     line-height: 2rem;
@@ -177,30 +178,92 @@ svg {
 }
 
 /* STEPS */
-.steps-h3{
+.steps-h3 {
     font-size: 1.5rem;
     font-family: aktivGrotest-bd, sans-serif;
 }
+
+.steps-container {
+    margin: 1.5rem 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.step-1-container{
+    position: relative;
+    transition: ease 1s;
+}
+
+.step-2-container, .step-3-container{
+    position: absolute;
+    transform: translate(30rem);
+    transition: ease 1s;
+    top: 0;
+}
+
+.step-title-h4 {
+    font-family: aktivGrotest-bd, sans-serif;
+    font-size: 1.25rem;
+}
+
+.steps-container>article>p {
+    font-family: aktivGrotest-lt, sans-serif;
+    font-size: 1rem;
+    line-height: 2rem;
+}
+
+.step-image {
+    width: 100%;
+}
+
+.step-subtitle {
+    display: inline-block;
+    font-family: playfair-regular, sans-serif;
+    color: var(--text-color-grey-70);
+    margin-top: 0.5rem;
+}
+
+.next-step-button {
+    background-color: var(--backgroun-color-pink);
+    color: var(--text-color-white);
+    padding: 0.75rem 2rem;
+    margin-top: 1.5rem;
+}
+
+/* class voor JS */
+.display-next-container{
+    transform: translate(0);
+}
+
+/* class voor JS */
+.remove-previous-container{
+    transform: translate(-30rem);
+}
+
+.disable-button{
+    opacity: 50%;
+}
+
 /* STEPS END */
 /* section AI design sprint END*/
 
 /* section cases */
-.section-cases{
+.section-cases {
     margin-top: 4rem;
 }
 
-.cases-h2{
+.cases-h2 {
     color: var(--text-color-grey-99);
     font-family: aktivGrotest-bd, sans-serif;
     font-size: 35px;
 }
 
-.case-item{
+.case-item {
     position: relative;
     margin-top: 1.5rem;
 }
 
-.case-text-container{
+.case-text-container {
     font-family: aktivGrotest-bd, sans-serif;
     position: absolute;
     bottom: 0;
@@ -210,31 +273,32 @@ svg {
     width: 100%;
 }
 
-.case-text-container h3{
+.case-text-container h3 {
     color: var(--text-color-white);
     font-size: 0.9rem;
 }
 
-.case-text-container p{
+.case-text-container p {
     font-size: 1rem;
     color: var(--text-color-white);
 }
 
-.case-text-container button{
+.case-text-container button {
     background-color: var(--backgroun-color-pink);
     color: var(--text-color-white);
     padding: 0.75rem 2rem;
     font-size: 0.75rem;
 }
 
-.case-item img{
+.case-item img {
     width: 100%;
     object-fit: cover;
 }
+
 /* section cases END */
 
 /* section contact */
-.section-contact{
+.section-contact {
     margin-top: 4rem;
     font-family: aktivGrotest-bd, sans-serif;
     color: var(--text-color-grey-99);
@@ -244,11 +308,11 @@ svg {
     padding-left: 18px;
 }
 
-.section-contact h2{
+.section-contact h2 {
     font-size: 1.25rem;
 }
 
-.contact-item{
+.contact-item {
     display: flex;
     flex-direction: column;
     font-family: playfair-regular, sans-serif;
@@ -257,72 +321,76 @@ svg {
     margin-top: 1.5rem;
 }
 
-.section-contact-number,.section-contact-mail{
+.section-contact-number,
+.section-contact-mail {
     font-family: aktivGrotest-bd, sans-serif;
     color: var(--text-color-grey-99);
 }
+
 /* section contact END */
 
 /* section relatable links */
-.section-related-articles{
+.section-related-articles {
     font-family: aktivGrotest-bd, sans-serif;
     background-color: var(--background-color-white);
     padding: 4rem 0;
     padding-left: 18px;
     line-height: 2rem;
 }
-.section-related-articles h2{
+
+.section-related-articles h2 {
     color: var(--text-color-grey-99);
     font-family: aktivGrotest-bd, sans-serif;
     font-size: 35px;
 }
 
-.section-related-article{
+.section-related-article {
     margin-top: 1.5rem;
     color: var(--text-color-grey-99)
 }
 
-.section-related-article > a{
+.section-related-article>a {
     display: flex;
     align-items: center;
     font-family: aktivGrotest-rg, sans-serif;
     color: var(--text-color-pink);
 }
 
-.section-related-article > a > svg{
+.section-related-article>a>svg {
     margin-left: 0.4em;
 }
+
 /* section relatable links END*/
 
 /* MAIN END */
 
 /* FOOTER */
-footer{
+footer {
     font-family: aktivGrotest-rg, sans-serif;
     background-color: var(--background-color-dark-grey-footer);
     color: var(--text-color-grey-50);
     padding: 0;
 }
 
-.first-footer-links{
+.first-footer-links {
     padding-top: 72px;
 }
 
-.section-footer{
+.section-footer {
     padding-left: 18px;
 }
 
-.footer-logo{
+.footer-logo {
     width: 2.5rem;
     margin-bottom: 1rem;
 }
 
-footer section ul{
+footer section ul {
     line-height: 2.5rem;
     list-style: none;
 }
 
-.footer-text-title{
+.footer-text-title {
     font-family: aktivGrotest-bd, sans-serif;
     color: var(--text-color-white);
     font-size: 18px;
@@ -330,23 +398,23 @@ footer section ul{
     margin-bottom: 1rem;
 }
 
-.third-footer-links-solutions{
+.third-footer-links-solutions {
     padding-bottom: 72px;
 }
 
-.tagline-footer{
+.tagline-footer {
     padding: 64px 16px;
     background-color: var(--background-color-grey-99);
     color: var(--background-color-white);
     font-family: aktivGrotest-bd, sans-serif;
 }
 
-.tagline-footer-title{
+.tagline-footer-title {
     margin-bottom: 1.5rem;
     font-size: 40px;
 }
 
-.tagline-subtitle{
+.tagline-subtitle {
     display: inline-block;
     font-family: playfair-regular, sans-serif;
     color: var(--text-color-grey-50);
@@ -354,17 +422,17 @@ footer section ul{
     margin-bottom: 1.5rem;
 }
 
-.tagline-footer > p{
+.tagline-footer>p {
     font-family: aktivGrotest-rg, sans-serif;
     font-size: 0.875rem;
     line-height: 34px;
 }
 
-.tagline-paragraph-text{
+.tagline-paragraph-text {
     font-family: aktivGrotest-bd, sans-serif;
 }
 
-.credentials-footer{
+.credentials-footer {
     display: flex;
     flex-direction: column;
     background-color: var(--background-color-dark-grey-footer);
@@ -373,15 +441,16 @@ footer section ul{
     line-height: 2.125rem;
 }
 
-.credentials-footer-adres{
+.credentials-footer-adres {
     color: var(--text-color-white);
 }
 
-.credentials-footer-bold{
+.credentials-footer-bold {
     font-family: aktivGrotest-bd, sans-serif;
 }
 
-.section-footer a{
+.section-footer a {
     margin-top: 1.5rem;
 }
+
 /* FOOTER END */

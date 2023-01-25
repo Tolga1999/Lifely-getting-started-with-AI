@@ -220,14 +220,16 @@ svg {
     display: inline-block;
     font-family: playfair-regular, sans-serif;
     color: var(--text-color-grey-70);
-    margin-top: 0.5rem;
+    margin-bottom: 1rem;
 }
 
 .next-step-button {
+    position: relative;
     background-color: var(--backgroun-color-pink);
     color: var(--text-color-white);
     padding: 0.75rem 2rem;
     margin-top: 1.5rem;
+    z-index: 2;
 }
 
 /* class voor JS */

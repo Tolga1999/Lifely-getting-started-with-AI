@@ -9,6 +9,14 @@ let step3Container = document.querySelector(".step-3-container");
 let step4Container = document.querySelector(".step-4-container");
 let step5Container = document.querySelector(".step-5-container");
 
+// anchor for scroll
+let DesignSprintAnchor = document.querySelector(".ai-design-sprint-text")
+
+// scroll position slightly changed
+DesignSprintAnchor.addEventListener('click', function(){
+    window.scroll(0, 975);
+})
+
 // times buttons clicked
 let nextButtonClicked = 0
 

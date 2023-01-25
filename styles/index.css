@@ -41,6 +41,10 @@
 }
 
 /* UTILITY CLASSES */
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: var(--background-color);
 }
@@ -153,10 +157,28 @@ svg {
 
 /* section introduction END */
 
-.desk-image {
+.location-images {
     margin-top: 4rem;
+    position: relative;
+    overflow-x: scroll;
+    display: flex;
+    scroll-snap-type: x mandatory;
+}
+
+.location-image {
     object-fit: cover;
-    max-width: 100%;
+    width: 100%;
+    scroll-snap-align: start;
+    margin-right: 1rem;
+}
+
+
+.first-image-carousel {
+    width: 80%;
+}
+
+.last-image-carousel{
+    margin-right: 0;
 }
 
 /* section AI design sprint */
@@ -189,12 +211,15 @@ svg {
     position: relative;
 }
 
-.step-1-container{
+.step-1-container {
     position: relative;
     transition: ease 1s;
 }
 
-.step-2-container, .step-3-container, .step-4-container, .step-5-container{
+.step-2-container,
+.step-3-container,
+.step-4-container,
+.step-5-container {
     position: absolute;
     transform: translate(30rem);
     transition: ease 1s;
@@ -233,20 +258,20 @@ svg {
 }
 
 /* class voor JS */
-.normal-position-container{
+.normal-position-container {
     transform: translate(0);
 }
 
 /* class voor JS */
-.left-position-container{
+.left-position-container {
     transform: translate(-30rem);
 }
 
-.right-position-container{
+.right-position-container {
     transform: translate(30rem);
 }
 
-.disable-button{
+.disable-button {
     opacity: 50%;
 }
 

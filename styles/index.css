@@ -194,7 +194,7 @@ svg {
     transition: ease 1s;
 }
 
-.step-2-container, .step-3-container{
+.step-2-container, .step-3-container, .step-4-container, .step-5-container{
     position: absolute;
     transform: translate(30rem);
     transition: ease 1s;
@@ -231,13 +231,17 @@ svg {
 }
 
 /* class voor JS */
-.display-next-container{
+.normal-position-container{
     transform: translate(0);
 }
 
 /* class voor JS */
-.remove-previous-container{
+.left-position-container{
     transform: translate(-30rem);
+}
+
+.right-position-container{
+    transform: translate(30rem);
 }
 
 .disable-button{

@@ -77,6 +77,11 @@ button {
     width: 3rem;
 }
 
+.logo-img-desktop {
+    display: none;
+    width: 4rem;
+}
+
 .menu-button {
     display: flex;
     align-items: center;
@@ -177,7 +182,7 @@ svg {
     width: 80%;
 }
 
-.last-image-carousel{
+.last-image-carousel {
     margin-right: 0;
 }
 
@@ -214,6 +219,7 @@ svg {
 .step-1-container {
     position: relative;
     transition: ease 1s;
+    max-width: 37.5rem
 }
 
 .step-2-container,
@@ -224,6 +230,7 @@ svg {
     transform: translate(30rem);
     transition: ease 1s;
     top: 0;
+    max-width: 37.5rem;
 }
 
 .step-title-h4 {
@@ -302,6 +309,7 @@ svg {
     line-height: 2rem;
     background-color: rgba(60, 59, 52, 0.3);
     width: 100%;
+    max-width: 40rem;
 }
 
 .case-text-container h3 {
@@ -323,6 +331,7 @@ svg {
 
 .case-item img {
     width: 100%;
+    max-width: 40rem;
     object-fit: cover;
 }
 
@@ -461,6 +470,7 @@ footer section ul {
 
 .tagline-paragraph-text {
     font-family: aktivGrotest-bd, sans-serif;
+    line-height: 2rem;
 }
 
 .credentials-footer {
@@ -485,3 +495,197 @@ footer section ul {
 }
 
 /* FOOTER END */
+
+/* MEDIA QUERIES */
+
+/* tablet media query */
+@media screen and (min-width: 525px) {
+
+    /* MENU */
+    .logo-img {
+        display: none;
+    }
+
+    .logo-img-desktop {
+        display: flex;
+    }
+
+    /* MENU END */
+
+    .section-title > h1{
+        font-size: 3rem;
+        width: 80%;
+    }
+
+    .section-introduction {
+        font-size: 1.5rem;
+        width: 85%;
+        margin-left: 7.5rem;
+    }
+
+    .buttons{
+        display: flex;
+        margin-left: 7.5rem;
+    }
+
+    .discover-more-button{
+        margin-left: 2rem;
+    }
+
+    /* ai design sprint */
+    .section-ai-design-sprint>p {
+        font-size: 1.125rem;
+    }
+
+    /* ai design sprint end */
+
+    /* STEPS */
+
+    .steps-h3 {
+        font-size: 1.75rem;
+    }
+
+    .step-subtitle {
+        font-size: 1.125rem;
+    }
+
+    .step-title-h4 {
+        font-size: 1.375rem;
+    }
+
+    .step-title-h4>p {
+        font-size: 2rem
+    }
+
+    .steps-container>article>p {
+        font-size: 1.125rem;
+    }
+
+    .next-step-button {
+        display: none;
+    }
+
+    .steps-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .step-1-container,
+    .step-2-container,
+    .step-3-container,
+    .step-4-container,
+    .step-5-container {
+        position: relative;
+        transform: translate(0);
+        margin-top: 1.5rem;
+    }
+
+    .step-1-container {
+        margin-top: 0;
+    }
+
+    /* STEPS END */
+
+    .section-title p {
+        font-size: 1.5rem;
+    }
+
+    /* cases */
+    .case-text-container>h3 {
+        font-size: 1rem;
+    }
+
+    .case-text-container>p {
+        font-size: 1.125rem
+    }
+
+    .case-text-container>button {
+        font-size: 0.875rem;
+    }
+
+    /* cases end */
+
+    /* contact */
+    .section-contact>h2 {
+        font-size: 1.75rem;
+    }
+
+    /* contact end */
+
+    /* read more */
+    .section-related-article>h3 {
+        font-size: 1.25rem;
+    }
+
+    .section-related-article>a {
+        font-size: 1.125rem;
+    }
+
+    /* read more end */
+
+    /* footer */
+    .tablet-footer-first {
+        display: flex;
+    }
+
+    .section-footer-tablet {
+        padding-left: 0;
+        padding-top: 4.5rem;
+        flex-grow: 2;
+    }
+
+    .first-footer-links {
+        flex-grow: 3;
+    }
+
+    .footer-title-services-tablet {
+        margin-top: 0;
+    }
+
+    .third-footer-links-solutions>ul {
+        display: flex;
+    }
+
+    .tablet-footer-solutions-first-part {
+        flex-grow: 3;
+    }
+
+
+    .tablet-footer-solutions-second-part {
+        flex-grow: 2.5;
+    }
+
+    /* footer end */
+
+    /* tagline */
+    .tagline-footer-title {
+        font-size: 3.5rem;
+    }
+
+    .tagline-subtitle {
+        font-size: 1.375rem;
+    }
+
+    .tablet-tagline-content {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        margin-left: 19em;
+    }
+
+    /* tagline end */
+
+}
+
+/* tablet media query end */
+
+/* desktop media query */
+@media screen and (min-width: 1020px) {
+    body {
+        background-color: red;
+    }
+}
+
+/* desktop media query end */
+
+/* MEDIA QUERIES END */

@@ -109,6 +109,7 @@ svg {
 /* section title */
 .section-title {
     margin-top: 1rem;
+    max-width: 50rem;
 }
 
 .section-title p {
@@ -133,6 +134,7 @@ svg {
     font-size: 20px;
     margin-top: 1.5rem;
     line-height: 2rem;
+    max-width: 50rem;
 }
 
 .ai-design-sprint-text {
@@ -169,12 +171,14 @@ svg {
     overflow-x: scroll;
     display: flex;
     scroll-snap-type: x mandatory;
+    max-width: 100rem;
+    max-height: 40rem;
 }
 
 /* scrollbar verwijderen van carousel */
-.location-images::-webkit-scrollbar{
+/* .location-images::-webkit-scrollbar{
     display: none;
-}
+} */
 
 .location-image {
     object-fit: cover;
@@ -518,7 +522,7 @@ footer section ul {
 
     /* MENU END */
 
-    .section-title > h1{
+    .section-title>h1 {
         font-size: 3rem;
         width: 80%;
     }
@@ -529,12 +533,12 @@ footer section ul {
         margin-left: 7.5rem;
     }
 
-    .buttons{
+    .buttons {
         display: flex;
         margin-left: 7.5rem;
     }
 
-    .discover-more-button{
+    .discover-more-button {
         margin-left: 2rem;
     }
 
@@ -593,14 +597,17 @@ footer section ul {
         margin-top: 0;
     }
 
-    .step-1-container, .step-3-container, .step-5-container{
+    .step-1-container,
+    .step-3-container,
+    .step-5-container {
         margin-right: 10rem;
     }
 
-    .step-2-container, .step-4-container{
-    margin-left: 10rem;
-    align-self: flex-end;
-}
+    .step-2-container,
+    .step-4-container {
+        margin-left: 10rem;
+        align-self: flex-end;
+    }
 
     /* STEPS END */
 
@@ -609,11 +616,11 @@ footer section ul {
     }
 
     /* cases */
-    .cases-tablet{
+    .cases-tablet {
         display: flex;
     }
 
-    .tablet-ruler-ai-case{
+    .tablet-ruler-ai-case {
         margin-right: 1.125rem;
     }
 
@@ -707,9 +714,165 @@ footer section ul {
 
 /* desktop media query */
 @media screen and (min-width: 1020px) {
-    body {
-        background-color: red;
+    main {
+        margin-left: 18rem;
     }
+
+    /* introduction */
+
+    .section-title>h1 {
+        /* width: 60%; */
+        font-size: 3.5rem;
+    }
+
+    .section-introduction {
+        /* width: 60%; */
+        margin-left: 24rem;
+        font-size: 1.625rem;
+    }
+
+    .buttons {
+        margin-left: 24rem;
+    }
+
+    /* introduction END */
+
+    .location-images {
+        margin-top: 7.5rem;
+    }
+
+    /* ai design sprint */
+    .section-ai-design-sprint {
+        margin-right: 18rem;
+        margin-top: 7.5rem;
+    }
+
+    .section-ai-design-sprint>h2 {
+        font-size: 3.5rem
+    }
+
+    .section-ai-design-sprint>P {
+        font-size: 1.25rem;
+        width: 90%;
+    }
+
+    /* ai design sprint END */
+
+    /* STEPS */
+    .steps-h3 {
+        font-size: 2rem;
+    }
+
+    .step-subtitle {
+        font-size: 1.5rem;
+    }
+
+    .step-title-h4 {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .steps-container>article>p {
+        font-size: 1.25rem;
+    }
+
+    .step-1-container {
+        display: flex;
+    }
+
+    .step-1-container,
+    .step-2-container,
+    .step-3-container,
+    .step-4-container,
+    .step-5-container {
+       max-width: 40rem;
+    }
+
+    /* STEPS END */
+
+    /* CASES */
+    .cases-h2{
+        font-size: 3.5rem;
+    }
+
+    .section-cases{
+        margin-right: 18rem;
+    }
+
+    .case-text-container, .case-item img {
+        max-width: 45rem;
+    }
+
+    .case-text-container p {
+        font-size: 1.5rem;
+        width: 70%;
+    }
+    /* CASES END */
+
+    /* CONTACT */
+    .contact-info-desktop{
+        margin-left: 18rem;
+    }
+
+    .contact-info-desktop > h2{
+        font-size: 2rem;
+    }
+
+    .contact-item{
+        font-size: 1.25rem;
+    }
+    /* CONTACT END */
+
+    /* READ MORE RELATED ARTICLES */
+    .section-related-articles{
+        margin-left: 18rem;
+    }
+
+    .section-related-articles > h2{
+        font-size: 2rem;
+    }
+
+    .flex-desktop-related-articles{
+        display: flex;
+    }
+
+    .section-related-article{
+        flex-grow: 2;
+    }
+    /* READ MORE END */
+
+    /* FOOTER */
+    .footer{
+        margin-right: 18rem;
+    }
+
+    .flex-desktop-footer-links{
+        display: flex;
+        margin-right: 18rem;
+    }
+
+    .first-footer-links{
+        margin-left: 18rem;
+    }
+
+    .tablet-footer-first{
+        flex-grow: 1;
+    }
+
+    .third-footer-links-solutions{
+        flex-grow: 1;
+    }
+
+    .footer-text-title{
+        margin: 0;
+    }
+
+    .third-footer-links-solutions{
+        padding-top: 4.5rem;
+        padding-left: 0;
+    }
+    /* FOOTER END */
+
 }
 
 /* desktop media query end */

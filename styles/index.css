@@ -12,6 +12,7 @@
     --background-color-grey-99: #3C3B34;
     --background-color-grey: #F6F6F4;
     --background-color-dark-grey-footer: #33322C;
+    --background-color-pink-hover: #EB5A5A;
     --text-color-white: #FFFF;
     --text-color-pink: #FF6B6B;
     --text-color-grey-99: #3C3B34;
@@ -147,6 +148,12 @@ svg {
     color: var(--text-color-white);
     padding: 0.75rem 2rem;
     margin-top: 1.5rem;
+    transition: ease 0.5s;
+    cursor: pointer;
+}
+
+.schedule-button:hover{
+    background-color: var(--background-color-pink-hover); 
 }
 
 .discover-more-button {
@@ -156,7 +163,19 @@ svg {
     background-color: var(--background-color-white);
     color: var(--text-color-pink);
     margin-top: 1.5rem;
+    transition: ease 0.5s;
+    cursor: pointer;
 }
+
+.discover-more-button:hover{
+    background-color: var(--backgroun-color-pink);
+    color: var(--text-color-white);
+}
+
+/* icon colour changes when button hover */
+.discover-more-button:hover .icon{
+    stroke: var(--text-color-white);
+} 
 
 .discover-more-button>svg {
     margin-left: 0.4em;
@@ -337,6 +356,12 @@ svg {
     color: var(--text-color-white);
     padding: 0.75rem 2rem;
     font-size: 0.75rem;
+    cursor: pointer;
+    transition: ease 0.5s;
+}
+
+.case-text-container button:hover{
+    background-color: var(--background-color-pink-hover);
 }
 
 .case-item img {
@@ -735,6 +760,10 @@ footer section ul {
         margin-left: 24rem;
     }
 
+    .discover-more-button{
+        padding: 0.75rem 2rem;
+    }
+
     /* introduction END */
 
     .location-images {
@@ -785,21 +814,22 @@ footer section ul {
     .step-3-container,
     .step-4-container,
     .step-5-container {
-       max-width: 40rem;
+        max-width: 40rem;
     }
 
     /* STEPS END */
 
     /* CASES */
-    .cases-h2{
+    .cases-h2 {
         font-size: 3.5rem;
     }
 
-    .section-cases{
+    .section-cases {
         margin-right: 18rem;
     }
 
-    .case-text-container, .case-item img {
+    .case-text-container,
+    .case-item img {
         max-width: 45rem;
     }
 
@@ -807,70 +837,116 @@ footer section ul {
         font-size: 1.5rem;
         width: 70%;
     }
+
     /* CASES END */
 
     /* CONTACT */
-    .contact-info-desktop{
+    .contact-info-desktop {
         margin-left: 18rem;
     }
 
-    .contact-info-desktop > h2{
+    .contact-info-desktop>h2 {
         font-size: 2rem;
     }
 
-    .contact-item{
+    .contact-item {
         font-size: 1.25rem;
     }
+
     /* CONTACT END */
 
     /* READ MORE RELATED ARTICLES */
-    .section-related-articles{
-        margin-left: 18rem;
+    .section-related-articles {
+        margin: 0 18rem;
     }
 
-    .section-related-articles > h2{
+    .section-related-articles>h2 {
         font-size: 2rem;
     }
 
-    .flex-desktop-related-articles{
+    .flex-desktop-related-articles {
         display: flex;
     }
 
-    .section-related-article{
+    .section-related-article {
         flex-grow: 2;
     }
+
     /* READ MORE END */
 
     /* FOOTER */
-    .footer{
+    .footer {
         margin-right: 18rem;
     }
 
-    .flex-desktop-footer-links{
+    .flex-desktop-footer-links {
         display: flex;
         margin-right: 18rem;
+        padding-bottom: 4.5rem;
     }
 
-    .first-footer-links{
+    .first-footer-links {
         margin-left: 18rem;
     }
 
-    .tablet-footer-first{
+    .tablet-footer-first {
         flex-grow: 1;
     }
 
-    .third-footer-links-solutions{
+    .third-footer-links-solutions {
         flex-grow: 1;
     }
 
-    .footer-text-title{
+    .footer-text-title {
         margin: 0;
     }
 
-    .third-footer-links-solutions{
+    .third-footer-links-solutions {
         padding-top: 4.5rem;
         padding-left: 0;
     }
+
+    /* tagline footer */
+    .tagline-container-desktop {
+        margin-left: 18rem;
+    }
+
+    .tagline-footer-title{
+        font-size: 4rem;
+        margin-bottom: 2rem;
+    }
+
+    .tagline-subtitle {
+        margin-left: 18rem;
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .desktop-tagline-content{
+        margin-left: 35rem;
+    }
+    /* tagline footer END */
+
+    /* credentials footer */
+    .credentials-footer{
+        margin: 0 18rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .credentials-footer-adres, .desktop-credentials{
+        flex-grow: 0.5;
+    }
+
+    .credentials-footer > a{
+        text-align: end;
+        margin-top: 0;
+        flex-grow: 3;
+        align-self: flex-end;
+    }
+    /* credentials footer END */
+
     /* FOOTER END */
 
 }

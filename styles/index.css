@@ -48,7 +48,6 @@ html {
 
 body {
     background-color: var(--background-color);
-    overflow-x: hidden;
 }
 
 header {
@@ -77,11 +76,13 @@ button {
 
 .logo-img {
     width: 3rem;
+    cursor: pointer;
 }
 
 .logo-img-desktop {
     display: none;
     width: 4rem;
+    cursor: pointer;
 }
 
 .menu-button {
@@ -98,6 +99,7 @@ button {
     display: flex;
     align-items: flex-end;
     margin-right: 0.5rem;
+    cursor: pointer;
 }
 
 svg {
@@ -152,8 +154,8 @@ svg {
     cursor: pointer;
 }
 
-.schedule-button:hover{
-    background-color: var(--background-color-pink-hover); 
+.schedule-button:hover {
+    background-color: var(--background-color-pink-hover);
 }
 
 .discover-more-button {
@@ -167,15 +169,15 @@ svg {
     cursor: pointer;
 }
 
-.discover-more-button:hover{
+.discover-more-button:hover {
     background-color: var(--backgroun-color-pink);
     color: var(--text-color-white);
 }
 
 /* icon colour changes when button hover */
-.discover-more-button:hover .icon{
+.discover-more-button:hover .icon {
     stroke: var(--text-color-white);
-} 
+}
 
 .discover-more-button>svg {
     margin-left: 0.4em;
@@ -360,7 +362,7 @@ svg {
     transition: ease 0.5s;
 }
 
-.case-text-container button:hover{
+.case-text-container button:hover {
     background-color: var(--background-color-pink-hover);
 }
 
@@ -429,10 +431,7 @@ svg {
     align-items: center;
     font-family: aktivGrotest-rg, sans-serif;
     color: var(--text-color-pink);
-}
-
-.section-related-article>a>svg {
-    margin-left: 0.4em;
+    cursor: pointer;
 }
 
 /* section relatable links END*/
@@ -463,6 +462,15 @@ footer {
 footer section ul {
     line-height: 2.5rem;
     list-style: none;
+}
+
+footer section ul li {
+    cursor: pointer;
+    transition: ease 0.25s;
+}
+
+footer section ul li:hover {
+    color: var(--text-color-white);
 }
 
 .footer-text-title {
@@ -760,7 +768,7 @@ footer section ul {
         margin-left: 24rem;
     }
 
-    .discover-more-button{
+    .discover-more-button {
         padding: 0.75rem 2rem;
     }
 
@@ -911,7 +919,7 @@ footer section ul {
         margin-left: 18rem;
     }
 
-    .tagline-footer-title{
+    .tagline-footer-title {
         font-size: 4rem;
         margin-bottom: 2rem;
     }
@@ -922,29 +930,32 @@ footer section ul {
         margin-bottom: 2rem;
     }
 
-    .desktop-tagline-content{
+    .desktop-tagline-content {
         margin-left: 35rem;
     }
+
     /* tagline footer END */
 
     /* credentials footer */
-    .credentials-footer{
+    .credentials-footer {
         margin: 0 18rem;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
 
-    .credentials-footer-adres, .desktop-credentials{
+    .credentials-footer-adres,
+    .desktop-credentials {
         flex-grow: 0.5;
     }
 
-    .credentials-footer > a{
+    .credentials-footer>a {
         text-align: end;
         margin-top: 0;
         flex-grow: 3;
         align-self: flex-end;
     }
+
     /* credentials footer END */
 
     /* FOOTER END */

@@ -237,7 +237,7 @@ svg {
 }
 
 .steps-container {
-    margin: 1.5rem 0;
+    margin: 0;
     overflow: hidden;
     position: relative;
 }
@@ -278,7 +278,7 @@ svg {
     display: inline-block;
     font-family: playfair-regular, sans-serif;
     color: var(--text-color-grey-70);
-    margin-bottom: 1rem;
+    margin: 1rem 0;
 }
 
 .next-step-button {
